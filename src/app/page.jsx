@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -18,9 +20,13 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 //Custom components
 import { Gem } from '../components/bg-gem'; // Adjust path as needed
+import  ViraProfile from "../components/vira-profile"
+import Services from "../components/services"
 
 //images
 import bg from "../assets/images/bg_vb/bgbalance1.png"
+import logo from '../../public/img/logos/vbalance YouTube-11.png'; // Replace 'yourLogo.png' with your actual logo filename
+
 
 export const metadata = {
   description:
@@ -30,12 +36,12 @@ export const metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gem
-        className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5 !bg-cover !bg-center !bg-no-repeat"
-        backgroundImage={bg} // Using the URL directly
-      />
-      {/* <Gradient
-        className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
+      {/* <Gem 
+        className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" 
+        backgroundImage={logo} 
+      /> */}
+      <Gradient
+        className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" />
       <Container className="relative">
         <Navbar
           banner={
@@ -48,10 +54,10 @@ function Hero() {
             </Link>
           }
           />
-        <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
+      <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
+        <div> {/* Wrapped the text content in a div */}
           <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Vira Boichuk
-
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Nutritionist, Nutrition Coach, Prevent Age Specialist
@@ -66,6 +72,11 @@ function Hero() {
             </Button>
           </div>
         </div>
+
+        <div className="mt-8 md:mt-0 md:ml-8 w-80 md:w-96 hidden md:block"> {/* Added 'hidden md:block' */}
+          <Image src={logo} alt="Your Logo" className="w-full h-auto" /> {/* Assuming you want the logo to fill its container */}
+        </div>
+      </div>
       </Container>
     </div>
   )
@@ -76,14 +87,18 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+          Відкрийте шлях до гармонії тіла і душі!
         </Heading>
-        <Screenshot
+        <Subheading className="mt-6 text-lg leading-8 text-gray-600">
+            Ви унікальні, і ваше здоров`&apos;`я - безцінний скарб. Разом ми створимо індивідуальну дорожню карту до комфортного самопочуття, природної форми та життєвої наснаги. Досвід, розуміння, персоналізований підхід - ось що чекає на вас в світі здорового харчування. Зробіть перший крок назустріч до кращої версії себе - сповненого енергії та впевненості у собі. Почніть змінюватися сьогодні - вага вже не матиме значення. Головне - це любов до себе та задоволення від кожної миті життя!
+          </Subheading>
+          <ViraProfile/>
+        {/* <Screenshot
           width={1216}
           height={768}
           src="./screenshots/app.png"
           className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
-        />
+        /> */}
       </Container>
     </div>
   )
@@ -208,11 +223,13 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-10">
+        {/* <Container className="mt-10">
           <LogoCloud />
-        </Container>
+        </Container> */}
+        
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
+          <Services />
           <BentoSection />
         </div>
         <DarkBentoSection />

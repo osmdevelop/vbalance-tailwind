@@ -11,11 +11,15 @@ import { Link } from './link'
 import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
+// Custom import
+import VbalanceLogo from "../../public/img/logos/Logo_not_background_Монтажна_область_1_копія_4.png"
+
 const links = [
   { href: '/pricing', label: 'Pricing' },
   { href: '/company', label: 'Company' },
   { href: '/blog', label: 'Blog' },
   { href: '/login', label: 'Login' },
+  { href: '#about', label: 'About' },
 ]
 
 function DesktopNav() {
@@ -83,7 +87,9 @@ export function Navbar({ banner }) {
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
+                {/* <Logo className="h-9" /> */}
                 <Logo className="h-9" />
+
               </Link>
             </PlusGridItem>
             {banner && (
