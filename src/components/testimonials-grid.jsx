@@ -7,6 +7,8 @@ import Olha36 from "../assets/images/testimonials/olha.png"
 import Oksana33 from "../assets/images/testimonials/oksana33.png"
 import Oleh29 from "../assets/images/testimonials/oleh29.png"
 import Mike47 from "../assets/images/testimonials/mike47.png"
+import Daniel56 from "../assets/images/testimonials/daniel56.png"
+import Lesia54 from "../assets/images/testimonials/lesia54.png"
 
 const testimonials = [
   {
@@ -51,7 +53,7 @@ const testimonials = [
       name: 'Даніель',
       handle: '56 років',
       imageUrl:
-        Olha36,
+        Daniel56,
     },
   },
   {
@@ -60,7 +62,7 @@ const testimonials = [
       name: 'Леся',
       handle: '54 років',
       imageUrl:
-        Olha36,
+        Lesia54,
     },
   },
   // More testimonials...
