@@ -34,7 +34,7 @@ import logo from '../../public/img/logos/vbalance YouTube-11.png'; // Replace 'y
 
 export const metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Vbalance - Vitalize your balance, find harmony!',
 }
 
 function Hero() {
@@ -47,17 +47,17 @@ function Hero() {
       <Gradient
         className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" />
       <Container className="relative">
-        {/* <Navbar
-          banner={
-            <Link
-            href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
-            className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-[hover]:bg-fuchsia-950/30"
-            >
-              Radiant raises $100M Series A from Tailwind Ventures
-              <ChevronRightIcon className="size-4" />
-            </Link>
-          }
-          /> */}
+        <Navbar
+          // banner={
+          //   <Link
+          //   href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
+          //   className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-[hover]:bg-fuchsia-950/30"
+          //   >
+          //     Radiant raises $100M Series A from Tailwind Ventures
+          //     <ChevronRightIcon className="size-4" />
+          //   </Link>
+          // }
+          />
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
         <div> {/* Wrapped the text content in a div */}
           <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
@@ -70,8 +70,8 @@ function Hero() {
             Vitalize your balance, find harmony!
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/">
+            <Button href="#about">Get started</Button>
+            <Button variant="secondary" href="#contact">
               Contact me
             </Button>
           </div>
@@ -90,7 +90,7 @@ function FeatureSection() {
   return (
     <div className="overflow-hidden">
       <Container className="pb-24">
-        <Heading as="h2" className="max-w-3xl">
+        <Heading as="h2" className="max-w-3xl" id="about">
           Відкрийте шлях до гармонії тіла і душі!
         </Heading>
         <Subheading className="mt-6 text-xl leading-8 text-gray-600">
@@ -243,7 +243,7 @@ export default function Home() {
         {/* <DarkBentoSection /> */}
       </main>
       {/* <Testimonials /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

@@ -15,11 +15,11 @@ import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 import VbalanceLogo from "../../public/img/logos/Logo_not_background_Монтажна_область_1_копія_4.png"
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/login', label: 'Login' },
-  { href: '#about', label: 'About' },
+  { href: '#about', label: 'Про мене' },
+  { href: '#services', label: 'Послуги' },
+  { href: '#testimonials', label: 'Відгуки' },
+  { href: '#blog', label: 'Блог' },
+  { href: '#contact', label: 'Контакти' },
 ]
 
 function DesktopNav() {

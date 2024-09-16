@@ -72,7 +72,8 @@ export default function TestimonialsGrid() {
   return (
     <section 
         className="bg-cover md:bg-left bg-no-repeat rounded-2xl m-2"
-        style={{ backgroundImage: `url(${backgroundImg.src})` }} 
+        style={{ backgroundImage: `url(${backgroundImg.src})` }}
+        id='testimonials' 
 >
     <div className="py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
