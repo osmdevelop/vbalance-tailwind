@@ -47,7 +47,7 @@ function Hero() {
       <Gradient
         className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" />
       <Container className="relative">
-        <Navbar
+        {/* <Navbar
           banner={
             <Link
             href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
@@ -57,7 +57,7 @@ function Hero() {
               <ChevronRightIcon className="size-4" />
             </Link>
           }
-          />
+          /> */}
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
         <div> {/* Wrapped the text content in a div */}
           <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
@@ -238,12 +238,12 @@ export default function Home() {
           <Blog />
           <Cta />
           <Contact />
-          <BentoSection />
+          {/* <BentoSection /> */}
         </div>
-        <DarkBentoSection />
+        {/* <DarkBentoSection /> */}
       </main>
       {/* <Testimonials /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
