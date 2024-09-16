@@ -71,8 +71,8 @@ function Hero() {
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/pricing">
-              See pricing
+            <Button variant="secondary" href="/">
+              Contact me
             </Button>
           </div>
         </div>
