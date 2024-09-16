@@ -43,11 +43,13 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
+import Success from './contact-alert'
+
 export default function Contact() {
   const [state, handleSubmit] = useForm("xgvwbznp");   
 
   if (state.succeeded) {
-    return <p>Дякую за звернення!</p>;
+    return <Success />;
   }
 
   return (
