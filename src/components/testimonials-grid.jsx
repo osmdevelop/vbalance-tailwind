@@ -79,7 +79,7 @@ export default function TestimonialsGrid() {
         Відгуки
       </span>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            We have worked with thousands of amazing people
+            Працювала з чудовими клієтами різного віку та способу життя
           </p>
         </div>
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
