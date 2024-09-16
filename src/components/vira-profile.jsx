@@ -23,14 +23,14 @@ const features = [
 
 export default function ViraProfile() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="overflow-hidden bg-white py-24 sm:pt-32 sm:pb-0">
+      <div className="mx-auto max-w-7xl px-2 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> */}
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Віра Бойчук</p>
-              <p className="mt-6 text-lg font-semibold leading-8 text-rose-600">
+              <p className="mt-2 text-6xl font-bold tracking-tight text-gray-900 sm:text-5xl">Віра Бойчук</p>
+              <p className="mt-6 text-xl font-semibold leading-8 text-rose-600">
                 Досвідчений лікар-терапевт, клінічний дієтолог та нутріціолог
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">

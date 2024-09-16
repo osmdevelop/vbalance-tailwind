@@ -29,7 +29,7 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-2 pb-12 sm:py-8 sm:pb-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 uppercase text-rose-600">Послуги</h2>

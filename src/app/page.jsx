@@ -5,7 +5,7 @@ import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
-import { Keyboard } from '@/components/keyboard'
+// import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
@@ -22,6 +22,10 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import { Gem } from '../components/bg-gem'; // Adjust path as needed
 import  ViraProfile from "../components/vira-profile"
 import Services from "../components/services"
+import TestimonialsGrid from "../components/testimonials-grid"
+import Blog from "../components/blog"
+import Cta from "../components/cta"
+import Contact from "../components/contact"
 
 //images
 import bg from "../assets/images/bg_vb/bgbalance1.png"
@@ -90,7 +94,7 @@ function FeatureSection() {
           Відкрийте шлях до гармонії тіла і душі!
         </Heading>
         <Subheading className="mt-6 text-lg leading-8 text-gray-600">
-            Ви унікальні, і ваше здоров`&apos;`я - безцінний скарб. Разом ми створимо індивідуальну дорожню карту до комфортного самопочуття, природної форми та життєвої наснаги. Досвід, розуміння, персоналізований підхід - ось що чекає на вас в світі здорового харчування. Зробіть перший крок назустріч до кращої версії себе - сповненого енергії та впевненості у собі. Почніть змінюватися сьогодні - вага вже не матиме значення. Головне - це любов до себе та задоволення від кожної миті життя!
+            Ви унікальні, і ваше здоровя - безцінний скарб. Разом ми створимо індивідуальну дорожню карту до комфортного самопочуття, природної форми та життєвої наснаги. Досвід, розуміння, персоналізований підхід - ось що чекає на вас в світі здорового харчування. Зробіть перший крок назустріч до кращої версії себе - сповненого енергії та впевненості у собі. Почніть змінюватися сьогодні - вага вже не матиме значення. Головне - це любов до себе та задоволення від кожної миті життя!
           </Subheading>
           <ViraProfile/>
         {/* <Screenshot
@@ -112,7 +116,7 @@ function BentoSection() {
         Know more about your customers than they do.
       </Heading>
 
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+      {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Insight"
           title="Get perfect clarity"
@@ -158,7 +162,7 @@ function BentoSection() {
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
-      </div>
+      </div> */}
     </Container>
   )
 }
@@ -227,14 +231,18 @@ export default function Home() {
           <LogoCloud />
         </Container> */}
         
-        <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
+        <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-20">
           <FeatureSection />
           <Services />
+          <TestimonialsGrid />
+          <Blog />
+          <Cta />
+          <Contact />
           <BentoSection />
         </div>
         <DarkBentoSection />
       </main>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   )
