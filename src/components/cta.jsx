@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import { Button } from '@/components/button'
 
-import vbalance from "../assets/images/bg_vb/bgbalance1.jpg"
+import vbalance from "../assets/images/bg_vb/FB VB_Монтажна область 1 - копія.png"
 
 export default function Example() {
   return (
-    <div className="rounded-t-2xl rounded-2xl relative bg-green-950 m-6 sm:m-4">
+    <div className="rounded-t-2xl rounded-2xl relative bg-emerald-700 m-6 sm:m-4">
       <div className="relative h-80 overflow-hidden md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2 ">
         <Image
           alt=""
@@ -44,12 +45,12 @@ export default function Example() {
             Приєднуйтесь до сотень задоволених клієнтів Віри Бойчук! Запишіться на консультацію вже сьогодні і розпочніть свою трансформацію під керівництвом експерта з нутриціології та профілактики старіння.
           </p>
           <div className="mt-8">
-            <a
+            {/* <a
               href="#"
-              className="inline-flex rounded-md bg-rose-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Забронювати консультацію
-            </a>
+              className="inline-flex rounded-md bg-rose-400 px-3.5 py-2.5 text-sm font-semibold text-emerald-800 shadow-sm hover:bg-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >text
+            </a> */}
+            <Button href="#contact">Забронювати консультацію</Button>
           </div>
         </div>
       </div>

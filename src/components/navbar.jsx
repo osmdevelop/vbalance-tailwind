@@ -6,6 +6,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react'
 import { Bars2Icon } from '@heroicons/react/24/solid'
+import { InstagramIcon, FacebookIcon } from '@heroicons/react/24/solid'; 
 import { motion } from 'framer-motion'
 import { Link } from './link'
 import { Logo } from './logo'
