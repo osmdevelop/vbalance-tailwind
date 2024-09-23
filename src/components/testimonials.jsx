@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import * as Headless from '@headlessui/react'
 import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import { clsx } from 'clsx'
@@ -15,62 +17,65 @@ import { Container } from './container'
 import { Link } from './link'
 import { Heading, Subheading } from './text'
 
+
+import backgroundImg from "../assets/images/bg/testimonials-bg.jpg"
+
+import Olha36 from "../assets/images/testimonials/olha.png"
+import Oksana33 from "../assets/images/testimonials/oksana33.png"
+import Oleh29 from "../assets/images/testimonials/oleh29.png"
+import Mike47 from "../assets/images/testimonials/mike47.png"
+import Daniel56 from "../assets/images/testimonials/daniel56.png"
+import Lesia54 from "../assets/images/testimonials/lesia54.png"
+
 const testimonials = [
   {
-    img: './testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    img: Olha36,
+    name: 'Ольга',
+    title: '36 років',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'Як 36-річна мати трьох дітей і співачка, мій досвід роботи з дієтологом Вірою Бойчук був трансформаційним. Спочатку я втратила 5 кілограмів лише за два тижні. Але справжній тріумф прийшов протягом наступних 8 місяців, коли я продовжувала застосовувати вчення Віри і загалом втратила 15 кг. Тепер моя вага стабільна, і я почуваюся просто чудово. Вона надала безцінні поради щодо харчування, які підходять моєму насиченому способу життя, а мережа жіночої підтримки, яку вона створила, була особливо цінною. Результати та отримані знання настільки вражаючі, що я вже записалася на наступний проект Віри.',
   },
   {
-    img: './testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    img: Oksana33,
+    name: 'Оксана',
+    title: '33 роки',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'Після народження дитини мені було важко повернутися до здорової ваги. Робота з Вірою Бойчук стала переломним моментом. Її цілісний підхід охоплював все: від прийому вітамінів та гідратації до правильного харчування та гігієни сну. Під керівництвом Віри я скинула 7 кг і повністю змінила своє ставлення до їжі.',
   },
   {
-    img: './testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    img: Oleh29,
+    name: 'Олег',
+    title: '29 років',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+      'As someone who struggled with high acidity, I was skeptical about changing my diet. It seemed easier to rely on medication like Omeprazole. However, working with Vira Boichuk transformed my approach to health. Initially, the transition was challenging - meal prep, frequent grocery trips, and making healthier choices felt overwhelming. But Vira`s guidance and constant support kept me motivated.',
   },
   {
-    img: './testimonials/veronica-winton.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    img: Mike47,
+    name: 'Михайло',
+    title: '47 років',
     quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
+      'Роками я покладався на нездорову їжу. Робота з доктором Вірою Бойчук змінила мій підхід до харчування. Її експертне керівництво відкрило мені очі на глибокий вплив фруктів та овочів на наш організм. Впровадження її рекомендацій призвело до значних покращень: мій шлунково-кишковий тракт та підшлункова залоза працюють краще, а рівень глюкози нормалізувався. Переваги виходять за рамки фізичного здоров`я. Найбільш разючою зміною стало покращення мого загального самопочуття - мій настрій значно поліпшився, і я розвинув більш оптимістичний погляд на життя.',
   },
   {
-    img: './testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+    img: Daniel56,
+    name: 'Даніель',
+    title: '56 років',
+    quote: 'Я ніколи не уявляв, що дієта може бути ключем до вирішення моїх хронічних проблем зі здоров`ям. Після років розчарування традиційними методами лікування, я відкрив для себе перетворюючу силу харчування завдяки дієтологу Вірі Бойчук. Протягом останніх п`яти років, керівництво доктора Віри було справді життєзмінним. Її персоналізований підхід до дієти та харчування звільнив мене від циклу хвороб та залежності від ліків. Не тільки мої проблеми зі здоров`ям відступили, але я також відчув дивовижне омолодження загального самопочуття.',
   },
   {
-    img: './testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    img: Lesia54,
+    name: 'Леся',
+    title: '54 років',
     quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+      'Як жінка, я зрозуміла, що моє здоров`я є наріжним каменем благополуччя та щастя моєї родини. Зіткнувшись з віковими змінами та бажаючи перейти на здоровіше харчування, я знала, що мені потрібна експертна порада. Після ретельного дослідження дієтологів у нашому місті, я знайшла доктора Віру Бойчук - рішення, за яке я безмежно вдячна. Підхід доктора Віри дійсно винятковий. Її високий професіоналізм поєднується з індивідуальним підходом та щирим співчуттям. Вона уважно слухає і надає постійну підтримку, пропонуючи рекомендації, які, при дотриманні, призводять до вражаючих покращень здоров`я та загального задоволення.',
   },
 ]
 
-function TestimonialCard({
-  name,
-  title,
-  img,
-  children,
-  bounds,
-  scrollX,
-  ...props
-}) {
+function TestimonialCard({ name, title, img, quote, bounds, scrollX }) {
   let ref = useRef(null)
+  const [isExpanded, setIsExpanded] = useState(false)
 
-  let computeOpacity = useCallback(() => {
+  const computeOpacity = useCallback(() => {
     let element = ref.current
     if (!element || bounds.width === 0) return 1
 
@@ -89,10 +94,7 @@ function TestimonialCard({
     }
   }, [ref, bounds.width, bounds.left, bounds.right])
 
-  let opacity = useSpring(computeOpacity(), {
-    stiffness: 154,
-    damping: 23,
-  })
+  let opacity = useSpring(computeOpacity(), { stiffness: 154, damping: 23 })
 
   useLayoutEffect(() => {
     opacity.set(computeOpacity())
@@ -102,64 +104,44 @@ function TestimonialCard({
     opacity.set(computeOpacity())
   })
 
+  const truncateText = (text, limit) => {
+    if (text.length > limit) {
+      return text.substring(0, limit) + '...'
+    }
+    return text
+  }
+
   return (
     <motion.div
       ref={ref}
       style={{ opacity }}
-      {...props}
-      className="relative flex aspect-[9/16] w-72 shrink-0 snap-start scroll-ml-[var(--scroll-padding)] flex-col justify-end overflow-hidden rounded-3xl sm:aspect-[3/4] sm:w-96"
+      className="relative flex flex-col justify-end w-[400px] max-w-96 flex-shrink-0 snap-start rounded-2xl bg-gray-50 p-8"
     >
-      <img
-        alt=""
-        src={img}
-        className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black from-[calc(7/16*100%)] ring-1 ring-inset ring-gray-950/10 sm:from-25%"
-      />
-      <figure className="relative p-10">
-        <blockquote>
-          <p className="relative text-xl/7 text-white">
-            <span aria-hidden="true" className="absolute -translate-x-full">
-              “
-            </span>
-            {children}
-            <span aria-hidden="true" className="absolute">
-              ”
-            </span>
-          </p>
+      <figure className="mt-6">
+        <blockquote className="text-gray-900">
+          <p>{`“${isExpanded ? quote : truncateText(quote, 150)}”`}</p>
         </blockquote>
-        <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">{name}</p>
-          <p className="text-sm/6 font-medium">
-            <span className="bg-gradient-to-r from-[#fff1be] from-[28%] via-[#ee87cb] via-[70%] to-[#b060ff] bg-clip-text text-transparent">
-              {title}
-            </span>
-          </p>
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="text-sm text-emerald-500 mt-2"
+        >
+          {isExpanded ? 'Show Less' : 'Show More'}
+        </button>
+        <figcaption className="mt-6">
+          <div className="flex items-center gap-4">
+            <Image
+              alt={name}
+              src={img}
+              className="h-10 w-10 rounded-full bg-gray-50"
+            />
+            <div>
+              <div className="font-semibold text-gray-900">{name}</div>
+              <div className="text-gray-600">{title}</div>
+            </div>
+          </div>
         </figcaption>
       </figure>
     </motion.div>
-  )
-}
-
-function CallToAction() {
-  return (
-    <div>
-      <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
-      </p>
-      <div className="mt-2">
-        <Link
-          href="#"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
-        >
-          Get started
-          <ArrowLongRightIcon className="size-5" />
-        </Link>
-      </div>
-    </div>
   )
 }
 
@@ -180,61 +162,51 @@ export function Testimonials() {
   }
 
   return (
-    <div className="overflow-hidden py-32">
-      <Container>
-        <div ref={setReferenceWindowRef}>
-          <Subheading>What everyone is saying</Subheading>
-          <Heading as="h3" className="mt-2">
-            Trusted by professionals.
-          </Heading>
+    <section 
+        className="bg-cover bg-center bg-no-repeat rounded-2xl m-2"
+        style={{ backgroundImage: `url(${backgroundImg.src})` }}
+        id='testimonials' 
+>
+    <div className="overflow-hidden py-16 mx-4">
+      <div className="mx-auto max-w-xl my-8 text-center">
+          <span className="inline-flex items-center rounded-full bg-green-800 px-2 py-1 text-md font-medium text-white ring-1 ring-inset ring-green-600/10">
+        Відгуки
+      </span>
+          <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
+            Працювала з чудовими клієтами різного віку та способу життя
+          </h2>
         </div>
-      </Container>
       <div
         ref={scrollRef}
-        className={clsx([
-          'mt-16 flex gap-8 px-[var(--scroll-padding)]',
-          '[scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
-          'snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth',
-          '[--scroll-padding:max(theme(spacing.6),calc((100vw-theme(maxWidth.2xl))/2))] lg:[--scroll-padding:max(theme(spacing.8),calc((100vw-theme(maxWidth.7xl))/2))]',
-        ])}
+        className="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar md:show-scrollbar"
       >
-        {testimonials.map(({ img, name, title, quote }, testimonialIndex) => (
+        {testimonials.map(({ img, name, title, quote }, index) => (
           <TestimonialCard
-            key={testimonialIndex}
+            key={index}
             name={name}
             title={title}
             img={img}
+            quote={quote}
             bounds={bounds}
             scrollX={scrollX}
-            onClick={() => scrollTo(testimonialIndex)}
-          >
-            {quote}
-          </TestimonialCard>
+          />
         ))}
-        <div className="w-[42rem] shrink-0 sm:w-[54rem]" />
       </div>
-      <Container className="mt-16">
-        <div className="flex justify-between">
-          <CallToAction />
-          <div className="hidden sm:flex sm:gap-2">
-            {testimonials.map(({ name }, testimonialIndex) => (
-              <Headless.Button
-                key={testimonialIndex}
-                onClick={() => scrollTo(testimonialIndex)}
-                data-active={
-                  activeIndex === testimonialIndex ? true : undefined
-                }
-                aria-label={`Scroll to testimonial from ${name}`}
-                className={clsx(
-                  'size-2.5 rounded-full border border-transparent bg-gray-300 transition',
-                  'data-[active]:bg-gray-400 data-[hover]:bg-gray-400',
-                  'forced-colors:data-[active]:bg-[Highlight] forced-colors:data-[focus]:outline-offset-4',
-                )}
-              />
-            ))}
-          </div>
-        </div>
-      </Container>
+
+      {/* Circles for Scrolling */}
+      <div className="mt-8 flex justify-center space-x-2 md:hidden">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollTo(index)}
+            className={clsx(
+              'h-3 w-3 rounded-full transition',
+              activeIndex === index ? 'bg-gray-800' : 'bg-gray-400'
+            )}
+          />
+        ))}
+      </div>
     </div>
+    </section>
   )
 }

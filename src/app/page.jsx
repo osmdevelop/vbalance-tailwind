@@ -22,6 +22,7 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import { Gem } from '../components/bg-gem'; // Adjust path as needed
 import  ViraProfile from "../components/vira-profile"
 import Services from "../components/services"
+// import TestimonialsRow from '@/components/testimonials-row'
 import TestimonialsGrid from "../components/testimonials-grid"
 import Blog from "../components/blog"
 import Cta from "../components/cta"
@@ -234,7 +235,9 @@ export default function Home() {
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-20">
           <FeatureSection />
           <Services />
-          <TestimonialsGrid />
+          <Testimonials/>
+          {/* Main testimonials 👇 */}
+          {/* <TestimonialsGrid /> */}
           <Blog />
           <Cta />
           <Contact />

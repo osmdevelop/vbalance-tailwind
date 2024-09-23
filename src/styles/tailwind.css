@@ -10,3 +10,48 @@
     transform: translateX(var(--move-x-to));
   }
 }
+
+
+
+@media (min-width: 768px) {
+  .show-scrollbar::-webkit-scrollbar {
+    display: block;
+  }
+
+  .show-scrollbar {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+  }
+}
+
+/* .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+.show-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.show-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0;
+  border-radius: 10px;
+}
+
+.show-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+}
