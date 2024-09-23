@@ -60,7 +60,7 @@ export default function Services() {
           {features.map((feature, index) => (
             <div key={feature.name} className={`relative pl-16 ${
               index === features.length - 1 && feature.description.length === 0 
-                ? 'bg-red-400 p-4 text-white max-h-36 rounded-lg content-center' // Apply background color if it's the last feature and has no description
+                ? 'bg-red-400 p-4 text-white max-h-48 rounded-lg content-center' // Apply background color if it's the last feature and has no description
                 : ''
             }`}>
 
@@ -70,7 +70,7 @@ export default function Services() {
                 : 'text-gray-900'
             }`}> {/* Conditional text color */}
               <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-rose-500">
-                <feature.icon aria-hidden="true" className="h-6 w-6 text-white" />
+                <feature.icon aria-hidden="true" className="h-8 w-6 text-white" />
               </div>
               {feature.name}
             </dt>
