@@ -61,16 +61,16 @@ function Hero() {
           />
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
         <div> {/* Wrapped the text content in a div */}
-          <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8] italic">
             Vira Boichuk
           </h1>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8 italic">
             Nutritionist, Nutrition Coach, Prevent Age Specialist
           </p>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8 italic">
             Vitalize your balance, find harmony!
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
+          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row italic">
             <Button href="#about">Get started</Button>
             <Button variant="secondary" href="#contact">
               Contact me

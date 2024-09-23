@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="The Radiant Blog"
+          title="Vbalane"
           href="/blog/feed.xml"
         />
       </head>
