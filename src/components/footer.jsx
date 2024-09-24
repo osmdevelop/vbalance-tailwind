@@ -123,7 +123,7 @@ function SocialLinks() {
         <SocialIconLinkedIn className="size-4" />
       </Link> */}
       <Link
-        href="https://facebook.com"
+        href="https://www.facebook.com/BoichukVira"
         target="_blank"
         aria-label="Visit us on Facebook"
         className="text-gray-950 data-[hover]:text-gray-950/75"

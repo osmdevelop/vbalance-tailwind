@@ -42,7 +42,7 @@ function SocialLinks() {
   return (
     <div className='flex gap-4 m-auto sm:pl-4'>
       <Link
-        href="https://facebook.com"
+        href="https://www.facebook.com/BoichukVira"
         target="_blank"
         aria-label="Visit us on Facebook"
         className="text-gray-950 data-[hover]:text-gray-950/75"
