@@ -11,6 +11,7 @@ export default function RootLayout({ children, params }) {
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&display=swap"
+          // https://fonts.adobe.com/fonts/pauline-didone-variable?vf-instance=Bold&vf-font-size=100&vf-font=PaulineDidoneVariable-Regular#fonts-section
         />
       </head>
       <body className="text-gray-950 antialiased">

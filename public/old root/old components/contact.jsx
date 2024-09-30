@@ -44,7 +44,6 @@ import { useForm, ValidationError } from '@formspree/react';
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 import Success from './contact-alert'
-import ContactForm from "./contact-form"
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xgvwbznp");   
@@ -121,7 +120,7 @@ export default function Contact() {
             </dl>
           </div>
         </div>
-        {/* <form onSubmit={handleSubmit} action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+        <form onSubmit={handleSubmit} action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
               <div className="sm:col-span-2">
@@ -176,8 +175,8 @@ export default function Contact() {
               </button>
             </div>
           </div>
-        </form>    */}
-<ContactForm/>
+        </form>   
+
       </div>
     </div>
   );

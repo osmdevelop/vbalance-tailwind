@@ -1,0 +1,99 @@
+{
+  "heroTitle": "Vira Boichuk",
+  "heroSubtitle": "Nutritionist, Nutrition Coach, Prevent Age Specialist",
+  "heroCTA": "Vitalize your balance, find harmony with Dr. Vira Boichuk!",
+  "getStarted": "Get started",
+  "contactMe": "Contact me",
+  "featureTitle": "Discover the path to harmony of body and soul!",
+  "featureDescription": "You are unique, and your health is a priceless treasure. Together we will create a personalized roadmap to comfortable well-being, natural fitness, and vitality. Experience, understanding, and a personalized approach - this is what awaits you in the world of healthy eating. Take the first step towards a better version of yourself - full of energy and self-confidence. Start changing today - weight will no longer matter. The main thing is self-love and enjoying every moment of life!",
+
+  "nav": {
+    "about": "About Me",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "social": {
+    "facebookAriaLabel": "Visit us on Facebook",
+    "instagramAriaLabel": "Visit my Instagram page"
+  },
+
+  "profile": {
+    "name": "Vira Boichuk",
+    "title": "Experienced physician, clinical dietitian, and nutritionist",
+    "features": [
+      {
+        "name": "Education:",
+        "description": "Graduated from Ivano-Frankivsk National Medical University in 2009 with a degree in Internal Medicine. Gained practical experience as a therapist in a city hospital and later as an assistant and associate professor at the Family Medicine department. In 2016, successfully defended her thesis on the role of intestinal hormones and pepsinogens in the development of gastroesophageal reflux disease combined with endemic goiter in iodine-deficient conditions."
+      },
+      {
+        "description": "In 2020, specialized in clinical dietetics at the P.L. Shupyk National Medical Academy in Kyiv. Since then, Vira Boichuk has been consulting patients as a certified dietitian, nutritionist, and anti-aging specialist in Ukraine, Europe, and the USA."
+      },
+      {
+        "description": "Vira Boichuk promotes an individualized approach to each patient and a holistic view of health as a harmony of body and soul, with a positive lifestyle."
+      }
+    ]
+  },
+
+  "services": {
+    "title": "Services",
+    "subtitle": "Spectrum of Nutrition Services",
+    "description": "Find your ideal healthy eating plan among personalized programs and expert guidance",
+    "features": [
+      {
+        "name": "Online Consultation - The First Step to Change!",
+        "description": [
+          "Detailed analysis of tests and eating habits",
+          "Individual nutrition and healthy lifestyle recommendations",
+          "Selection of vitamins and supplements if necessary",
+          "PDF guide and sample one-day menu"
+        ]
+      },
+      {
+        "name": "Comprehensive Program 'Balanced Menu'",
+        "description": [
+          "Thorough health analysis and your body's needs",
+          "Development of a 7-day menu considering all preferences",
+          "Text recommendations on optimal nutrition",
+          "Selection of supplements if necessary"
+        ]
+      },
+      {
+        "name": "Monthly Support - Path to Long-Term Results",
+        "description": [
+          "Individual action plan to achieve your goals",
+          "4-week menu with the possibility of adjustments",
+          "Daily communication via text with answers to questions and control of the situation",
+          "Weekly calls with mini-lectures and answers to questions",
+          "Weekly lecture calls to deepen your knowledge",
+          "Access to useful materials on nutrition"
+        ]
+      },
+      {
+        "name": "Whatever program you choose, Vira's professional support will ensure your confidence on the path to ideal health!",
+        "description": []
+      }
+    ]
+  },
+
+  "cta": {
+    "ctaTitle": "Consultation",
+    "ctaDescription": "Join hundreds of satisfied customers of Vira Boichuk! Schedule a consultation today and begin your transformation under the guidance of an expert in nutrition and antiaging.",
+    "ctaBtn": "Book a consultation"
+  },
+
+  "footer": {
+    "sitemap": {
+      "about": "About Me",
+      "services": "Services",
+      "testimonials": "Testimonials",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "social": {
+      "facebookAriaLabel": "Visit us on Facebook",
+      "instagramAriaLabel": "Visit my IG page"
+    }
+  }
+}
