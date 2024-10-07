@@ -47,10 +47,10 @@ export async function Page({ params: { lang } }) {
                 <Navbar />
             <div className="pb-32 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
                 <div> {/* Wrapped the text content in a div */}
-                <p className="mb-8 max-w-lg text-xl/2 font-normal text-gray-950/75 sm:text-xl/8 italic">
+                <p className="pauline mb-8 max-w-lg text-xl/2 font-normal text-gray-950/75 sm:text-2xl/8 italic">
                     {dict.heroCTA}
                 </p>
-                <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8] italic">
+                <h1 className="pauline font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8] italic">
                     {dict.heroTitle}
                 </h1>
                 <p className="mt-8 max-w-lg text-2xl/7 font-medium text-gray-950/75 sm:text-2xl/8 italic">
@@ -77,10 +77,10 @@ export async function Page({ params: { lang } }) {
         return (
             <div className="overflow-hidden">
             <Container className="pb-24">
-                <Heading as="h2" className="max-w-3xl" id="about">
+                <Heading as="h2" className="max-w-3xl pauline" id="about">
                 {dict.featureTitle}
                 </Heading>
-                <p className="mt-6 text-sm leading-6 sm:text-lg text-justify text-gray-600">
+                <p className="mt-6 text-lg leading-6 sm:text-lg text-justify text-gray-600">
                     {dict.featureDescription}
                 </p>
                 <ViraProfile/>

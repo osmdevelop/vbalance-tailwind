@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: 'Lora, system-ui, sans-serif',
+        'pauline-didone': ['"pauline-didone-variable"', 'sans-serif']
       },
       borderRadius: {
         '4xl': '2rem',

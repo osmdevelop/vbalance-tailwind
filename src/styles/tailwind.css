@@ -11,7 +11,9 @@
   }
 }
 
-
+.pauline {
+  font-family: "Pauline Didone W01 Bold"
+}
 
 @media (min-width: 768px) {
   .show-scrollbar::-webkit-scrollbar {
@@ -55,3 +57,9 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem;
 }
+
+p {
+  font-family: "pauline-didone-variable", sans-serif;
+  font-variation-settings: 'wght' 500;
+}
+

@@ -77,10 +77,76 @@
     ]
   },
 
+  "testimonials": {
+    "sectionTitle": "Worked with wonderful clients of various ages and lifestyles",
+    "sectionSubtitle": "Testimonials",
+    "testimonialsList": [
+      {
+        "name": "Oleh",
+        "title": "29 years",
+        "quote": "As someone who struggled with high acidity, I was skeptical about changing my diet. It seemed easier to rely on medication like Omeprazole. However, working with Vira Boichuk transformed my approach to health. Initially, the transition was challenging - meal prep, frequent grocery trips, and making healthier choices felt overwhelming. But Vira`s guidance and constant support kept me motivated."
+      },
+      {
+        "name": "Oksana",
+        "title": "33 years",
+        "quote": "After having my baby, I had a hard time getting back to a healthy weight. Working with Vira Boychuk was a turning point. Her holistic approach covered everything from vitamins and hydration to proper nutrition and sleep hygiene. Under Vera's guidance, I lost 7 kg and completely changed my attitude to food."
+      }
+    ]
+  },
+
+  "blog": {
+    "sectionTitle": "Blog Posts",
+    "sectionSubtitle": "Here I share interesting articles, resources...",
+    "posts": [
+      {
+        "id": 1,
+        "title": "Planet-first diet cuts risk of early death by nearly a third",
+        "href": "https://www.cnn.com/2024/06/10/health/planetary-diet-longevity-study-wellness/index.html",
+        "description": "Closely following a planet-friendly diet of mostly fruits, vegetables and whole grains reduces the risk of premature death by nearly one-third in people, while also dramatically cutting the release of greenhouse gases devastating the planet.",
+        "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-88307658.jpg?q=w_1110,c_fill/f_webp"
+      },
+      {
+        "id": 2,
+        "title": "Avocados may play a beneficial role in diabetes management and prevention.",
+        "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10489295/",
+        "description": "Research indicates that regular avocado consumption is associated with a lower risk of developing type 2 diabetes, particularly among women.",
+        "imageUrl": "https://www.verywellfit.com/thmb/JkYWOKkbR3qxN8cOeq9dpveIv-Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/avocado_annotated-29ebeb829c02433aaa55de1ab7d28643.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Regularly eating avocado linked to lower diabetes risk in women",
+        "href": "https://www.medicalnewstoday.com/articles/regularly-eating-avocado-linked-to-lower-diabetes-risk-in-women#Studying-avocado-consumption-and-diabetes-risk",
+        "description": "A recent study from Mexico links avocado consumption with a lower diabetes risk. Image credit: Tatiana Maksimova/Getty Images.",
+        "imageUrl": "https://images.unsplash.com/photo-1502642074847-9afe11995f6b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+
   "cta": {
     "ctaTitle": "Consultation",
     "ctaDescription": "Join hundreds of satisfied customers of Vira Boichuk! Schedule a consultation today and begin your transformation under the guidance of an expert in nutrition and antiaging.",
     "ctaBtn": "Book a consultation"
+  },
+
+  "contact": {
+    "sectionTitle": "Contact Me",
+    "sectionSubtitle": "Schedule a consultation today and start your transformation!",
+    "addressLabel": "Address",
+    "address": "Chicago, IL, USA",
+    "phoneLabel": "Telephone",
+    "phoneNumber": "+1 (312) 956-7730",
+    "emailLabel": "Email",
+    "emailAddress": "vira.boichuk[at]vbalance.food"
+  },
+
+  "contactForm": {
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone Number",
+    "messageLabel": "Type your message",
+    "submitButton": "Submit",
+    "sendingMessage": "Sending...",
+    "successMessage": "Form Submitted Successfully"
   },
 
   "footer": {

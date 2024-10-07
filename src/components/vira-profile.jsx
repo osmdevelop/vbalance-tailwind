@@ -42,7 +42,7 @@ export default function ViraProfile() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> */}
-              <p className="mt-2 text-6xl font-bold tracking-tight text-gray-900 sm:text-5xl">{dict.profile.name}</p>
+              <p className="mt-2 pauline text-6xl font-bold tracking-tight text-gray-900 sm:text-5xl">{dict.profile.name}</p>
               <p className="mt-6 text-xl font-semibold leading-8 text-rose-600">
                 {dict.profile.title}
               </p>
@@ -53,7 +53,7 @@ export default function ViraProfile() {
                       {/* <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-600" /> */}
                       {feature.name}
                     </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
+                    <dd className="inline text-sm">{feature.description}</dd>
                   </div>
                 ))}
               </dl>

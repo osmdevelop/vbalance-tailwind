@@ -23,7 +23,7 @@ export default function Services() {
           <h2 className="text-base font-semibold leading-7 uppercase text-rose-600">
             {dict.services.title} {/* Dynamic title */}
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 pauline text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {dict.services.subtitle} {/* Dynamic subtitle */}
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
