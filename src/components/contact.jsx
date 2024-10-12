@@ -68,7 +68,7 @@ export default function Contact() {
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
               {/* SVG background code */}
             </div>
-            <h2 className="text-3xl font-bold pauline tracking-tight text-gray-900">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
               {dict.contact.sectionTitle} {/* Dynamic section title */}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">

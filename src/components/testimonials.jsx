@@ -27,6 +27,8 @@ import Mike47 from "../assets/images/testimonials/mike47.png"
 import Daniel56 from "../assets/images/testimonials/daniel56.png"
 import Lesia54 from "../assets/images/testimonials/lesia54.png"
 
+import DefaulUser from "../assets/images/testimonials/default-user.png"
+
 
 import { useParams } from 'next/navigation'; // Import to get dynamic language
 import en from '../app/[lang]/dictionaries/en.json'; // English translations
@@ -190,7 +192,7 @@ export function Testimonials() {
           <span className="inline-flex items-center rounded-full bg-green-800 px-2 py-1 text-md font-medium text-white ring-1 ring-inset ring-green-600/10">
         {dict.testimonials.sectionSubtitle}
       </span>
-          <h2 className="text-3xl pauline font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
+          <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
             {dict.testimonials.sectionTitle}
           </h2>
         </div>
@@ -203,7 +205,7 @@ export function Testimonials() {
               key={index}
               name={testimonial.name}
               title={testimonial.title}
-              img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`]}
+              img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`] || DefaulUser}
               quote={testimonial.quote}
               bounds={bounds}
               scrollX={scrollX}

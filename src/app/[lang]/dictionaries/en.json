@@ -90,6 +90,26 @@
         "name": "Oksana",
         "title": "33 years",
         "quote": "After having my baby, I had a hard time getting back to a healthy weight. Working with Vira Boychuk was a turning point. Her holistic approach covered everything from vitamins and hydration to proper nutrition and sleep hygiene. Under Vera's guidance, I lost 7 kg and completely changed my attitude to food."
+      },
+      {
+        "name": "Olha",
+        "title": "36 years old",
+        "quote": "As a 36-year-old mother of three and a singer, my experience working with dietician Vira Boychuk was transformational. Initially, I lost 5 kilograms in just two weeks. But the real triumph came over the next 8 months, as I continued to apply Vira's teachings and lost a total of 15 kg. Now my weight is stable, and I feel simply wonderful. She provided invaluable nutritional advice that fits my busy lifestyle, and the network of female support she created was especially valuable. The results and knowledge gained are so impressive that I have already signed up for Vira's next project."
+      },
+      {
+        "name": "Mykhailo",
+        "title": "47 years old",
+        "quote": "For years, I relied on unhealthy food. Working with Dr. Vira Boychuk changed my approach to nutrition. Her expert guidance opened my eyes to the profound impact of fruits and vegetables on our bodies. Implementing her recommendations led to significant improvements: my gastrointestinal tract and pancreas are working better, and my glucose levels have normalized. The benefits go beyond physical health. The most striking change was the improvement in my overall well-being - my mood has improved significantly, and I have developed a more optimistic outlook on life."
+      },
+      {
+        "name": "Daniel",
+        "title": "56 years old",
+        "quote": "I never imagined that diet could be the key to solving my chronic health problems. After years of frustration with traditional treatments, I discovered the transformative power of nutrition thanks to dietician Vira Boychuk. Over the past five years, Dr. Vira's guidance has been truly life-changing. Her personalized approach to diet and nutrition freed me from the cycle of illness and dependence on medication. Not only have my health problems receded, but I have also experienced an amazing rejuvenation of overall well-being."
+      },
+      {
+        "name": "Lesya",
+        "title": "54 years old",
+        "quote": "As a woman, I realized that my health is the cornerstone of my family's well-being and happiness. Faced with age-related changes and wanting to switch to a healthier diet, I knew I needed expert advice. After careful research of dieticians in our city, I found Dr. Vira Boychuk - a solution for which I am immensely grateful. Dr. Vira's approach is truly exceptional. Her high professionalism is combined with an individual approach and sincere compassion. She listens carefully and provides ongoing support, offering recommendations that, when followed, lead to impressive improvements in health and overall satisfaction."
       }
     ]
   },
@@ -118,6 +138,13 @@
         "href": "https://www.medicalnewstoday.com/articles/regularly-eating-avocado-linked-to-lower-diabetes-risk-in-women#Studying-avocado-consumption-and-diabetes-risk",
         "description": "A recent study from Mexico links avocado consumption with a lower diabetes risk. Image credit: Tatiana Maksimova/Getty Images.",
         "imageUrl": "https://images.unsplash.com/photo-1502642074847-9afe11995f6b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 4,
+        "title": "Food for your bones: how to follow a diet for osteoporosis",
+        "href": "https://health.clevelandclinic.org/osteoporosis-diet",
+        "description": "A balanced diet plays a crucial role in maintaining bone health and preventing osteoporosis...",
+        "imageUrl": "https://assets.clevelandclinic.org/transform/LargeFeatureImage/6dcb7fa2-48e9-43a8-921b-c89ee2ee46aa/person-food-sign-1904438879"
       }
     ]
   },
