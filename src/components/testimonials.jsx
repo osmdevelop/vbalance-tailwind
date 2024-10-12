@@ -27,7 +27,11 @@ import Mike47 from "../assets/images/testimonials/mike47.png"
 import Daniel56 from "../assets/images/testimonials/daniel56.png"
 import Lesia54 from "../assets/images/testimonials/lesia54.png"
 
+<<<<<<< HEAD
 import DefaulUser from "../assets/images/testimonials/default-user.png"
+=======
+import DefaultImage from "../assets/images/testimonials/default-user.png";  // Import a default image
+>>>>>>> 96021d6108f90077aa1a649350c5e0041f987e73
 
 
 import { useParams } from 'next/navigation'; // Import to get dynamic language
@@ -201,6 +205,7 @@ export function Testimonials() {
         className="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar md:show-scrollbar"
       >
         {dict.testimonials.testimonialsList.map((testimonial, index) => (
+<<<<<<< HEAD
             <TestimonialCard
               key={index}
               name={testimonial.name}
@@ -211,6 +216,18 @@ export function Testimonials() {
               scrollX={scrollX}
             />
           ))}
+=======
+    <TestimonialCard
+      key={index}
+      name={testimonial.name}
+      title={testimonial.title}
+      img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`] || DefaultImage}  // Use DefaultImage if the key is not found
+      quote={testimonial.quote}
+      bounds={bounds}
+      scrollX={scrollX}
+    />
+))}
+>>>>>>> 96021d6108f90077aa1a649350c5e0041f987e73
       </div>
 
       {/* Circles for Scrolling */}

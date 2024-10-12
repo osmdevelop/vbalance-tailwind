@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import '@/styles/tailwind.css'; 
 import { getDictionary } from './dictionaries';  // dictionaries folder
 
 import { BentoCard } from '../../../src/components/bento-card'
