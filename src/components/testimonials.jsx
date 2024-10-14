@@ -27,8 +27,6 @@ import Mike47 from "../assets/images/testimonials/mike47.png"
 import Daniel56 from "../assets/images/testimonials/daniel56.png"
 import Lesia54 from "../assets/images/testimonials/lesia54.png"
 
-import DefaulUser from "../assets/images/testimonials/default-user.png"
-
 
 import { useParams } from 'next/navigation'; // Import to get dynamic language
 import en from '../app/[lang]/dictionaries/en.json'; // English translations
@@ -182,40 +180,40 @@ export function Testimonials() {
   }
 
   return (
-    <section 
-        className="bg-cover bg-center bg-no-repeat rounded-2xl m-2"
-        style={{ backgroundImage: `url(${backgroundImg.src})` }}
-        id='testimonials' 
->
-    <div className="overflow-hidden py-16 mx-4">
-      <div className="mx-auto max-w-xl my-8 text-center">
+    <section
+      className="bg-cover bg-center bg-no-repeat rounded-2xl m-2"
+      style={{ backgroundImage: `url(${backgroundImg.src})` }}
+      id='testimonials'
+    >
+      <div className="overflow-hidden py-16 mx-4">
+        <div className="mx-auto max-w-xl my-8 text-center">
           <span className="inline-flex items-center rounded-full bg-green-800 px-2 py-1 text-md font-medium text-white ring-1 ring-inset ring-green-600/10">
-        {dict.testimonials.sectionSubtitle}
-      </span>
-          <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
+            {dict.testimonials.sectionSubtitle}
+          </span>
+          <h2 className="text-3xl pauline font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
             {dict.testimonials.sectionTitle}
           </h2>
         </div>
-      <div
-        ref={scrollRef}
-        className="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar md:show-scrollbar"
-      >
-        {dict.testimonials.testimonialsList.map((testimonial, index) => (
+        <div
+          ref={scrollRef}
+          className="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar md:show-scrollbar"
+        >
+          {dict.testimonials.testimonialsList.map((testimonial, index) => (
             <TestimonialCard
               key={index}
               name={testimonial.name}
               title={testimonial.title}
-              img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`] || DefaulUser}
+              img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`]}
               quote={testimonial.quote}
               bounds={bounds}
               scrollX={scrollX}
             />
           ))}
-      </div>
+        </div>
 
-      {/* Circles for Scrolling */}
-      <div className="mt-8 flex justify-center space-x-2 md:hidden">
-        {dict.testimonials.testimonialsList.map((_, index) => (
+        {/* Circles for Scrolling */}
+        <div className="mt-8 flex justify-center space-x-2 md:hidden">
+          {dict.testimonials.testimonialsList.map((_, index) => (
             <button
               key={index}
               onClick={() => scrollTo(index)}
@@ -223,10 +221,10 @@ export function Testimonials() {
                 'h-3 w-3 rounded-full transition',
                 activeIndex === index ? 'bg-gray-800' : 'bg-gray-400'
               )}
-          />
-        ))}
+            />
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   )
 }
