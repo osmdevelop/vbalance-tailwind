@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import '@/styles/tailwind.css'; 
+
 import { getDictionary } from './dictionaries';  // dictionaries folder
 
 import { BentoCard } from '../../../src/components/bento-card'
@@ -22,7 +22,7 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 //Custom components
 import { Gem } from '../../../src/components/bg-gem'; // Adjust path as needed
-import  ViraProfile from "../../../src/components/vira-profile"
+import ViraProfile from "../../../src/components/vira-profile"
 import Services from "../../../src/components/services"
 // import TestimonialsRow from '@/components/testimonials-row'
 import TestimonialsGrid from "../../../src/components/testimonials-grid"
@@ -34,80 +34,80 @@ import Contact from "../../../src/components/contact"
 import bg from "../../assets/images/bg_vb/bgbalance1.png"
 import logo from '../../../public/img/logos/vbalance YouTube-11.png'; // Replace 'yourLogo.png' with your actual logo filename
 
-
-export async function Page({ params: { lang } }) {
-  const dict = await getDictionary(lang);
-        
-  function Hero() {
-        return (
-            <div className="relative">
+function Hero({ dict }) {
+    return (
+        <div className="relative">
             <Gradient
                 className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" />
             <Container className="relative">
                 <Navbar />
-            <div className="pb-32 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
-                <div> {/* Wrapped the text content in a div */}
-                <p className="mb-8 max-w-lg text-xl/2 font-normal text-gray-950/75 sm:text-2xl/8 italic">
-                    {dict.heroCTA}
-                </p>
-                <h1 className="pauline font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8] italic">
-                    {dict.heroTitle}
-                </h1>
-                <p className="mt-8 max-w-lg text-2xl/7 font-medium text-gray-950/75 sm:text-2xl/8 italic">
-                    {dict.heroSubtitle}
-                </p>
-                <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row italic">
-                    <Button href="#about">{dict.getStarted}</Button>
-                    <Button variant="secondary" href="#contact">
-                    {dict.contactMe}
-                    </Button>
-                </div>
-                </div>
+                <div className="pb-32 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col md:flex-row items-center justify-between">
+                    <div> {/* Wrapped the text content in a div */}
+                        <p className=" mb-8 max-w-lg text-xl/2 font-normal text-gray-950/75 sm:text-2xl/8 italic">
+                            {dict.heroCTA}
+                        </p>
+                        <h1 className="pauline font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 text-5xl/[0.9] sm:text-8xl/[0.8] md:text-8xl/[0.8] italic">
 
-                <div className="mt-8 md:mt-0 md:ml-8 w-80 md:w-96 hidden md:block"> {/* Added 'hidden md:block' */}
-                <Image src={logo} alt="Your Logo" className="w-full h-auto" /> {/* Assuming you want the logo to fill its container */}
+                            {dict.heroTitle}
+                        </h1>
+                        <p className="mt-8 max-w-lg text-2xl/7 font-medium text-gray-950/75 sm:text-2xl/8 italic"
+                            style={{ fontSize: "14px" }}>
+                            {dict.heroSubtitle}
+                        </p>
+                        <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row italic">
+                            <Button href="#about">{dict.getStarted}</Button>
+                            <Button variant="secondary" href="#contact">
+                                {dict.contactMe}
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="mt-8 md:mt-0 md:ml-8 w-80 md:w-96 hidden md:block"> {/* Added 'hidden md:block' */}
+                        <Image src={logo} alt="Your Logo" className="w-full h-auto" /> {/* Assuming you want the logo to fill its container */}
+                    </div>
                 </div>
-            </div>
             </Container>
-            </div>
-        )
-        }
+        </div>
+    )
+}
 
-        function FeatureSection() {
-        return (
-            <div className="overflow-hidden">
+function FeatureSection({ dict }) {
+    return (
+        <div className="overflow-hidden">
             <Container className="pb-24">
                 <Heading as="h2" className="max-w-3xl" id="about">
-                {dict.featureTitle}
+                    {dict.featureTitle}
                 </Heading>
                 <p className="mt-6 text-lg leading-6 sm:text-lg text-justify text-gray-600">
                     {dict.featureDescription}
                 </p>
-                <ViraProfile/>
+                <ViraProfile />
             </Container>
-            </div>
-        )
-        }
+        </div>
+    )
+}
 
-       
+export async function Page({ params: { lang } }) {
+    const dict = await getDictionary(lang);
 
 
-        return (
-            <div className="overflow-hidden">
-            <Hero />
+
+    return (
+        <div className="overflow-hidden">
+            <Hero dict={dict} />
             <main>
                 <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-20">
-                <FeatureSection />
-                <Services />
-                <Testimonials/>
-                <Blog />
-                <Cta />
-                <Contact />
+                    <FeatureSection dict={dict} />
+                    <Services />
+                    <Testimonials />
+                    <Blog />
+                    <Cta />
+                    <Contact />
                 </div>
             </main>
             <Footer />
-            </div>
-        )
-    }
+        </div>
+    )
+}
 export default Page;
 
