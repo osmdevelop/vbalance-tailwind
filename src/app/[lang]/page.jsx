@@ -87,7 +87,7 @@ function FeatureSection({ dict }) {
     )
 }
 
-export async function Page({ params: { lang } }) {
+export default async function Page({ params: { lang } }) {
     const dict = await getDictionary(lang);
 
 
@@ -109,5 +109,3 @@ export async function Page({ params: { lang } }) {
         </div>
     )
 }
-export default Page;
-
