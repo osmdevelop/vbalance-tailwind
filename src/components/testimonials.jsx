@@ -143,11 +143,11 @@ function TestimonialCard({ name, title, img, quote, bounds, scrollX }) {
         </button>
         <figcaption className="mt-6">
           <div className="flex items-center gap-4">
-            <Image
+            {/* <Image
               alt={name}
               src={img}
               className="h-10 w-10 rounded-full bg-gray-50"
-            />
+            /> */}
             <div>
               <div className="font-semibold text-gray-900">{name}</div>
               <div className="text-gray-600">{title}</div>
@@ -190,7 +190,7 @@ export function Testimonials() {
           <span className="inline-flex items-center rounded-full bg-green-800 px-2 py-1 text-md font-medium text-white ring-1 ring-inset ring-green-600/10">
             {dict.testimonials.sectionSubtitle}
           </span>
-          <h2 className="text-3xl pauline font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
+          <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl glassmorphism">
             {dict.testimonials.sectionTitle}
           </h2>
         </div>
@@ -203,7 +203,7 @@ export function Testimonials() {
               key={index}
               name={testimonial.name}
               title={testimonial.title}
-              img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`]}
+              // img={testimonialsImages[`${testimonial.name}${testimonial.title.replace(/\s/g, '')}`]}
               quote={testimonial.quote}
               bounds={bounds}
               scrollX={scrollX}
