@@ -1,7 +1,7 @@
 {
   "heroTitle": "Vira Boichuk",
   "heroSubtitle": "Nutritionist, Nutrition Coach, Prevent Age Specialist",
-  "heroCTA": "Vitalize your balance, find harmony with Dr. Vira Boichuk!",
+  "heroCTA": "Vitalize your balance, find harmony with Dr. Vira Boichuk",
   "getStarted": "Get started",
   "contactMe": "Contact me",
   "featureTitle": "Discover the path to harmony of body and soul!",
@@ -120,27 +120,34 @@
     "posts": [
       {
         "id": 1,
+        "title": "Study Reveals How Much Exercise You Need Weekly To Control Your Blood Pressure",
+        "href": "https://www.sciencealert.com/study-reveals-how-much-exercise-you-need-weekly-to-control-your-blood-pressure",
+        "description": "A recent study has shed light on the crucial role of exercise in blood pressure management. The research delves into the optimal amount of weekly physical activity required at different life stages to effectively control blood pressure.",
+        "imageUrl": "https://www.sciencealert.com/images/2021-04/processed/GettyImages-492708704-Edit_1024.jpg"
+      },
+      {
+        "id": 2,
         "title": "Planet-first diet cuts risk of early death by nearly a third",
         "href": "https://www.cnn.com/2024/06/10/health/planetary-diet-longevity-study-wellness/index.html",
         "description": "Closely following a planet-friendly diet of mostly fruits, vegetables and whole grains reduces the risk of premature death by nearly one-third in people, while also dramatically cutting the release of greenhouse gases devastating the planet.",
         "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-88307658.jpg?q=w_1110,c_fill/f_webp"
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "Avocados may play a beneficial role in diabetes management and prevention.",
         "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10489295/",
         "description": "Research indicates that regular avocado consumption is associated with a lower risk of developing type 2 diabetes, particularly among women.",
         "imageUrl": "https://www.verywellfit.com/thmb/JkYWOKkbR3qxN8cOeq9dpveIv-Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/avocado_annotated-29ebeb829c02433aaa55de1ab7d28643.jpg"
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "Regularly eating avocado linked to lower diabetes risk in women",
         "href": "https://www.medicalnewstoday.com/articles/regularly-eating-avocado-linked-to-lower-diabetes-risk-in-women#Studying-avocado-consumption-and-diabetes-risk",
         "description": "A recent study from Mexico links avocado consumption with a lower diabetes risk. Image credit: Tatiana Maksimova/Getty Images.",
         "imageUrl": "https://images.unsplash.com/photo-1502642074847-9afe11995f6b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "Food for your bones: how to follow a diet for osteoporosis",
         "href": "https://health.clevelandclinic.org/osteoporosis-diet",
         "description": "A balanced diet plays a crucial role in maintaining bone health and preventing osteoporosis...",
