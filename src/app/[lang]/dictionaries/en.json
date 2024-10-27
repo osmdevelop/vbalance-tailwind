@@ -127,27 +127,34 @@
       },
       {
         "id": 2,
+        "title": "How physical activity and diet impact sleep in adolescents",
+        "href": "https://www.news-medical.net/news/20241004/How-physical-activity-and-diet-impact-sleep-in-adolescents.aspx",
+        "description": "Physical activity and diet significantly influence adolescent sleep. Recent research has shown a strong correlation between physical activity, dietary habits, and both the duration and quality of sleep in adolescents...",
+        "imageUrl": "https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20241003105156/ri/750/src/images/news/ImageForNews_792155_17279671141343720.jpg"
+      },
+      {
+        "id": 3,
         "title": "Planet-first diet cuts risk of early death by nearly a third",
         "href": "https://www.cnn.com/2024/06/10/health/planetary-diet-longevity-study-wellness/index.html",
         "description": "Closely following a planet-friendly diet of mostly fruits, vegetables and whole grains reduces the risk of premature death by nearly one-third in people, while also dramatically cutting the release of greenhouse gases devastating the planet.",
         "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-88307658.jpg?q=w_1110,c_fill/f_webp"
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "Avocados may play a beneficial role in diabetes management and prevention.",
         "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10489295/",
         "description": "Research indicates that regular avocado consumption is associated with a lower risk of developing type 2 diabetes, particularly among women.",
         "imageUrl": "https://www.verywellfit.com/thmb/JkYWOKkbR3qxN8cOeq9dpveIv-Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/avocado_annotated-29ebeb829c02433aaa55de1ab7d28643.jpg"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "Regularly eating avocado linked to lower diabetes risk in women",
         "href": "https://www.medicalnewstoday.com/articles/regularly-eating-avocado-linked-to-lower-diabetes-risk-in-women#Studying-avocado-consumption-and-diabetes-risk",
         "description": "A recent study from Mexico links avocado consumption with a lower diabetes risk. Image credit: Tatiana Maksimova/Getty Images.",
         "imageUrl": "https://images.unsplash.com/photo-1502642074847-9afe11995f6b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
-        "id": 5,
+        "id": 6,
         "title": "Food for your bones: how to follow a diet for osteoporosis",
         "href": "https://health.clevelandclinic.org/osteoporosis-diet",
         "description": "A balanced diet plays a crucial role in maintaining bone health and preventing osteoporosis...",
