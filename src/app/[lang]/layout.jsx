@@ -2,8 +2,9 @@ import '@/styles/tailwind.css';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 
-export default function RootLayout({ children, params }) {
-  const { lang } = params;  // Get the lang parameter from the dynamic route
+
+export default async function RootLayout({ children, params }) {
+  const { lang } = await params; // Await params here
 
   return (
     <html lang={lang} className="scroll-smooth">

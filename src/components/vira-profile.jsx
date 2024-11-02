@@ -46,17 +46,16 @@ export default function ViraProfile() {
               <p className="mt-6 text-xl font-semibold leading-8 text-rose-600">
                 {dict.profile.title}
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {dict.profile.features.map((feature) => (
-                  <div key={feature.name} className="relative">
-                    <dt className="inline font-semibold text-gray-900">
-                      {/* <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-600" /> */}
-                      {feature.name}
-                    </dt>{' '}
-                    <dd className="inline text-xl">{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
+<dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+  {dict.profile.features.map((feature, index) => (
+    <div key={feature.name || index} className="relative"> {/* Use index as a fallback key */}
+      <dt className="inline font-semibold text-gray-900">
+        {feature.name}
+      </dt>{' '}
+      <dd className="inline text-xl">{feature.description}</dd>
+    </div>
+  ))}
+</dl>
             </div>
           </div>
           <Image
