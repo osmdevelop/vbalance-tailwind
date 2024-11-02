@@ -46,7 +46,7 @@ function Hero({ dict }) {
                         <p className=" mb-8 max-w-lg text-xl/2 font-normal text-gray-950/75 sm:text-2xl/8 italic">
                             {dict.heroCTA}
                         </p>
-                        <h1 className="pauline font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 text-5xl/[0.9] sm:text-8xl/[0.8] md:text-8xl/[0.8] italic">
+                        <h1 className="pauline font-display text-balance font-medium tracking-tight text-gray-950 text-5xl/[0.9] sm:text-8xl/[0.8] md:text-8xl/[0.8] italic">
 
                             {dict.heroTitle}
                         </h1>

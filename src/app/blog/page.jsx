@@ -5,13 +5,13 @@ import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
-import { image } from '@/sanity/image'
-import {
-  getCategories,
-  getFeaturedPosts,
-  getPosts,
-  getPostsCount,
-} from '@/sanity/queries'
+// import { image } from '@/sanity/image'
+// import {
+//   getCategories,
+//   getFeaturedPosts,
+//   getPosts,
+//   getPostsCount,
+// } from '@/sanity/queries'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
   CheckIcon,
