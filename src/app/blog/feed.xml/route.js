@@ -1,6 +1,4 @@
-import { image } from '@/sanity/image'
-import { getPostsForFeed } from '@/sanity/queries'
-import { Feed } from 'feed'
+// import { Feed } from 'feed'
 import assert from 'node:assert'
 
 export async function GET(req) {

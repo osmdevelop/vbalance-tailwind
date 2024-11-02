@@ -11,7 +11,7 @@ export function Logo({ className }) {
   }
 
   return (
-    <Image src={vbalanceLogo} className='w-36 sm:w-72'>
+    <Image src={vbalanceLogo} className='w-36 sm:w-72' alt="logo">
     </Image>
   )
 }
